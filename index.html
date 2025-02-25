@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>MathQuest: The Chronicles of Namibia</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    </head>
+
+    <body>
+        <div id="game-container">
+            <canvas id="game-canvas"></canvas>
+            <div id="ui">
+                <div id="maths-problem"></div>
+                <input type="text" id="maths-input" placeholder="Enter your answer">
+                <button id="submit-answer">Submit</button>
+                <div id="level-indicator">Level: 0</div>
+            </div>
+
+            <div id="audio-controls">
+                <label for="volume-slider">Volume:</label>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                <button id="mute-bgm">Toggle BGM</button>
+                <button id="mute-sfx">Toggle SFX</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
